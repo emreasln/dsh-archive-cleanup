@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Archive Cleanup",
+    "description": "Permanently delete archived sessions, auto-delete old archives, and restore deleted workspaces."
+  }
+}

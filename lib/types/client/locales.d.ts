@@ -1,0 +1,52 @@
+/** English copy. The plugin ships English only; other locales fall back to it. */
+export declare const en: {
+    nav: string;
+    'menu.delete': string;
+    'retention.title': string;
+    'retention.description': string;
+    'retention.never': string;
+    'retention.days.one': string;
+    'retention.days.other': string;
+    deleteAll: string;
+    empty: string;
+    'group.ungrouped': string;
+    'group.deleted': string;
+    'group.restore': string;
+    'group.delete': string;
+    'row.untitled': string;
+    'row.archived': string;
+    'row.archivedWithWorkspace': string;
+    'row.deletesIn.one': string;
+    'row.deletesIn.other': string;
+    'row.deletesToday': string;
+    'row.kept': string;
+    'row.pending': string;
+    'row.restore': string;
+    'row.delete': string;
+    'confirm.cancel': string;
+    'confirm.close': string;
+    'confirm.pending': string;
+    'confirm.safe': string;
+    'confirm.one.title': string;
+    'confirm.one.desc': string;
+    'confirm.many.title': string;
+    'confirm.all.desc': string;
+    'confirm.group.desc': string;
+    'confirm.retention.title': string;
+    'confirm.retention.desc.one': string;
+    'confirm.retention.desc.other': string;
+    'confirm.delete': string;
+    'confirm.apply': string;
+    'notice.deleted.one': string;
+    'notice.deleted.other': string;
+    'notice.scheduled.one': string;
+    'notice.scheduled.other': string;
+    'notice.restored': string;
+    'notice.missingFolder': string;
+    'notice.failed': string;
+    'notice.workspaceArchived.one': string;
+    'notice.workspaceArchived.other': string;
+};
+/** Locale key of this plugin's namespace. */
+export type CleanupKey = keyof typeof en;
+//# sourceMappingURL=locales.d.ts.map
