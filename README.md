@@ -21,20 +21,23 @@ You need DeepSeek Harness 0.2.1-rc.3 or a later 0.2.x release, either the deskto
 **From the app**
 
 1. Open **Plugins** and click **Add plugin**.
-2. Paste `https://github.com/emreasln/dsh-archive-cleanup` and click **Install**.
+2. Paste this address and click **Install**:
+
+   ```text
+   https://github.com/emreasln/dsh-archive-cleanup/archive/refs/tags/v0.1.0.tar.gz
+   ```
+
 3. **Settings → Archived sessions** appears. If it doesn't, restart DeepSeek Harness.
+
+This address downloads the release over HTTPS, so Git does not need to be installed.
 
 **From the command line**
 
 ```sh
-npx @deepseek-ai/dsh plugin --profile web add github:emreasln/dsh-archive-cleanup
+npx @deepseek-ai/dsh plugin --profile web add https://github.com/emreasln/dsh-archive-cleanup/archive/refs/tags/v0.1.0.tar.gz
 ```
 
-To pin an exact version, install a release tarball instead of the repository. Download the `.tgz` from [Releases](https://github.com/emreasln/dsh-archive-cleanup/releases), then install it:
-
-```sh
-npx @deepseek-ai/dsh plugin --profile web add ./dsh-archive-cleanup-0.1.0.tgz
-```
+**Troubleshooting:** If you paste the repository address (`https://github.com/emreasln/dsh-archive-cleanup`) instead, DSH installs with Git. It first checks the connection with a 5-second limit, which can fail with *GitHub connection timed out* on slow connections. Use the `.tar.gz` address above instead.
 
 ## Usage
 
